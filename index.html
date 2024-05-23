@@ -11,6 +11,20 @@
 </script>
     <script src="romans.js"></script>
     <link rel="stylesheet" href="romans.css">
+    <script>
+      function init() {
+        // Asegúrate de que tu función init también maneje la lógica adicional que necesites
+        document.querySelector('.convert-button').addEventListener('click', function() {
+          // Aquí va la lógica para la conversión, si la tienes
+          
+          // Evento de Google Analytics
+          gtag('event', 'convert', {
+            'event_category': 'Conversion',
+            'event_label': 'Convert Button Click'
+          });
+        });
+      }
+    </script>
   </head>
   <body onload="init()">
     <main class="container">
